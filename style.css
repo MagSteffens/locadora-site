@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a0d0a;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  padding: 20px;
+  color: #fefefe;
+}
+
+header {
+  background-color: #260c1a;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid #ff6b81;
+  box-shadow: 0 2px 15px #00000044;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  color: #ff6b81;
+  text-shadow: 3px 3px #000;
+  letter-spacing: 3px;
+  font-family: 'Crystal Universe Regular', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+nav a {
+  color: #ffe066;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  background-color: #ff6b81;
+  color: #1a0d0a;
+  border: 1px solid #ffe066;
+}
+
+.boas-vindas {
+  width: 900px;
+  margin-bottom: 40px;
+  border: 3px solid #ff6b81;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 30px #ff6b8144;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.boas-vindas img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  margin: 50px 0;
+  padding: 30px;
+  background-color: #2a1212;
+  border: 2px solid #ff6b81;
+  border-radius: 14px;
+  box-shadow: 0 0 30px #ff6b8144;
+  font-size: 1.1rem;
+}
+
+.container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffe066;
+  font-family: 'SF Hollywood Hills', sans-serif;
+  text-align: center;
+}
+
+.filmes-grid, .generos-grid, .aleatorios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.filmes-grid div, .aleatorios-grid div {
+  background-color: #352626;
+  padding: 10px;
+  border: 1px solid #ffedd6;
+  text-align: center;
+  color: #ffedd6;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filmes-grid div:hover, .aleatorios-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #00000066;
+}
+
+.filmes-grid img, .aleatorios-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.generos-grid button {
+  background-color: #000;
+  color: #ffe066;
+  border: 1px solid #ffe066;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  font-family: 'KG WhY YoU GoTtA Be So MeAn', sans-serif;
+}
+
+.generos-grid button:hover {
+  background-color: #ffe066;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.fita-rebobinada article {
+  background-color: #2c2c2c;
+  border: 1px dashed #ff6b81;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff6b8140;
+}
+
+.fita-rebobinada h3 {
+  color: #ffe066;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.fita-rebobinada p {
+  color: #ffedd6;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.fita-rebobinada a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff6b81;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fita-rebobinada a:hover {
+  text-decoration: underline;
+}
+
+.trailer-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  background: linear-gradient(145deg, #000, #1b1b1b);
+  border: 2px solid #ffe066;
+  border-radius: 14px;
+  box-shadow: 0 0 25px #ffcc0033;
+}
+
+.feedback {
+  background-color: #2a1212;
+  padding: 40px 20px;
+  border-top: 4px solid #ff6b81;
+  border-bottom: 4px solid #ff6b81;
+  text-align: center;
+  box-shadow: 0 0 25px #ff6b8144;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.feedback h2 {
+  color: #ffe066;
+  font-family: 'SF Hollywood Hills';
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-feedback {
+  background-color: #2f4f4f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffedd6;
+  color: #ffedd6;
+  box-shadow: 0 0 15px #ff6b8133;
+  transition: transform 0.3s;
+}
+
+.card-feedback:hover {
+  transform: translateY(-5px);
+}
+
+.card-feedback p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.card-feedback span {
+  color: #ffe066;
+  font-weight: bold;
+  font-family: 'KG WhY YoU GoTtA Be So MeAn';
+}
+
+.rating h3{
+  color: #ffe066;
+  font-family: 'SF Hollywood Hills';
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.estrelas-avaliacao {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+  height: auto;
+}
+
+.estrelas-avaliacao input {
+  display: none;
+}
+
+.estrelas-avaliacao label {
+  font-size: 2.5rem;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.estrelas-avaliacao label:hover,
+.estrelas-avaliacao label:hover ~ label {
+  color: #ffe066;
+}
+
+.estrelas-avaliacao input:checked ~ label {
+  color: #ffe066;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 4px solid #ff6b81;
+  margin-top: 60px;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: 'SF Hollywood Hills', sans-serif;
+}
